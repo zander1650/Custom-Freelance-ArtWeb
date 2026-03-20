@@ -51,7 +51,7 @@ function Home() {
         )}
       </main>
       <footer>
-        <p>Please visit the <a href="/contact">Contact</a> page for commissions and to connect with me</p>
+        <p>Please visit the contact page for commissions and to connect with me</p>
       </footer>
     </div>
   );

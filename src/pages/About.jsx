@@ -6,33 +6,54 @@ function About() {
         <img
           src="/art/Lucy.jpg"
           alt="Lucy artwork"
-          style={{ width: '260px', flexShrink: 0, borderRadius: '12px', boxShadow: '0 6px 18px rgba(0,0,0,0.15)' }}
+          style={{ width: '180px', height: 'auto', borderRadius: '10px', boxShadow: '0 5px 14px rgba(0,0,0,0.15)', flexShrink: 0, maxWidth: '100%' }}
         />
-
-        {/* Arrow positioned to the right of the image, angled toward it */}
-        <div style={{
-          position: 'absolute',
-          left: '300px',
-          top: '50%',
-          transform: 'translateY(-50%) rotate(180deg) scaleY(-1)',
-          display: 'flex',
-          alignItems: 'center',
-        }}>
+        <div
+          style={{
+            position: 'absolute',
+            left: '210px',
+            top: '70%',
+            transform: 'translateY(-50%) rotate(-180deg)',
+            display: 'flex',
+            alignItems: 'center',
+            maxWidth: '40vw',
+          }}
+        >
           <img
-              src="/art/Arrow.jpg"
+            src="/art/Arrow.jpg"
             alt="Arrow pointing to image"
             style={{
-              width: '360px',
-              transform: 'rotate(-20deg)',
+              width: '400px',
+              maxWidth: '100%',
               filter: 'drop-shadow(2px 2px 3px rgba(0,0,0,0.2))',
             }}
           />
         </div>
-
-        <p style={{ marginTop: '0', marginLeft: '120px', fontSize: '1rem', lineHeight: '1.6' }}>
-          Commissions please, furry's will be given preference.
+        <p style={{ margin: '0', fontSize: '1rem', lineHeight: '1.6', maxWidth: '650px', flex: 1 }}>
+          Commissions please, furry's will be given preference. I specialize in vivid, expressive artwork with a focus
+          on furry characters and creative portraits. Reach out to work together on your custom piece!
         </p>
       </div>
+      <style>{`
+        @media (max-width: 700px) {
+          .about-flex {
+            flex-direction: column !important;
+            align-items: center !important;
+            gap: 12px !important;
+          }
+          img {
+            width: 100% !important;
+            max-width: 220px !important;
+            margin-bottom: 10px !important;
+          }
+          h1 {
+            font-size: 1.5em !important;
+          }
+          p {
+            font-size: 1em !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
