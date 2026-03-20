@@ -26,10 +26,10 @@ function Contact() {
   };
 
   return (
-    <div style={{ padding: '40px 20px', maxWidth: '8200px', margin: '0 auto' }}>
+    <div style={{ padding: '40px 20px', maxWidth: '800px', margin: '0 auto' }}>
       <h1>Contact Me</h1>
       <p>Interested in commissioning a piece or have questions about my work? I'd love to hear from you!</p>
-      <form ref={form} onSubmit={sendEmail} style={{ display: 'flex', flexDirection: 'column', gap: '24px', margin: '32px 0', width: '100%', maxWidth: 500, alignSelf: 'center' }}>
+      <form ref={form} onSubmit={sendEmail} style={{ display: 'flex', flexDirection: 'column', gap: '24px', margin: '32px 0', width: '100%', maxWidth: 800, alignSelf: 'center' }}>
         <div style={{ width: '100%' }}>
           <input type="text" name="user_name" placeholder="Your Name" required maxLength={100}
             style={{ padding: '10px', borderRadius: '6px', border: '1px solid #f4e4bc', width: '100%', fontSize: '1em', boxSizing: 'border-box' }}
